@@ -1,6 +1,7 @@
 import datetime
 import os
 import time
+import time_french
 import time_english
 import time_german
 import time_swabian
@@ -43,10 +44,12 @@ class plugin:
             self.taw = time_swiss_german.time_swiss_german()
         elif language == 'swiss_german2':
             self.taw = time_swiss_german2.time_swiss_german2()
+        elif language == 'french':
+            self.taw = time_french.time_french()
         else:
             print('Could not detect language: ' + language + '.')
             print('Choosing default: german')
-            self.taw = time_german.time_german()
+            self.taw = time_english.time_english()
 
         try:
             self.typewriter = config.getboolean('plugin_' + self.name, 'typewriter')
