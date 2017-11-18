@@ -10,8 +10,5 @@ fontdemo.py
 # ignore highlighted files: no checkin
 *NOCI*
 
-# ignore individual config-files
-wordclock_config/wordclock_config.cfg
-
 # ignore swap-files
 *.swp
